@@ -1,0 +1,66 @@
+<DOCTYPE! HTML>
+    <html>
+
+    <head>
+        <Title>Catch That Train</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="title">Get a view </h1>
+                <p id="sub-header">Pick a destination, and be on time for the train.</p>
+            </div>
+        </div>
+        <table class="table table-dark">
+            <thead id="table-header">
+                <tr>
+                    <th scope="col">Train Name</th>  
+                    <th scope="col">Destination</th> 
+                    <th scope="col">Frequency (min)</th> 
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr></tr>
+            </tbody>
+        </table>
+        <div class="panel panel-default" id="form">
+            <div class="panel-heading" id="table-header">Add Train</div>
+            <form id="form">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Train Name</label>
+                    <input type="text" class="form-control" id="trainname-input" placeholder="Golden Gate Caravan">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Destination</label>
+                    <input type="text" class="form-control" id="traindes-input" placeholder="San Francisco">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">First Train Time (HH:mm-military time)</label>
+                    <input type="text" class="form-control" id="traintime-input" placeholder="15:00">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Frequency (min)</label>
+                    <input type="text" class="form-control" id="trainfreq-input" placeholder="15 min">
+                </div>
+
+                <button class="btn btn-primary" id="add-user" type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/train.js"></script>
+        
+    </body>
+
+    </html>
+
+
+    <!-- //API KEY:AIzaSyDYh46r5m29eIBO74iUohvBvoDDZxOsvXY -->
